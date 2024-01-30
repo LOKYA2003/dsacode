@@ -4,18 +4,16 @@ using namespace std;
 void bubbleSort(int arr[], int n)
 {
     int i, j;
-    // [3,2,1,4]
-    // One by one move boundary of
 
-    bool swapped = true; // Initialize swapped inside the outer loop
+    bool swapped = true;
     for (i = 0; i < n - 1; i++)
     {
 
-        for (j = 0; j < n - i - 1; j++) // Corrected the inner loop condition
+        for (j = 0; j < n - i - 1; j++)
         {
             if (arr[j] > arr[j + 1])
             {
-                swap(arr[j], arr[j + 1]); // Corrected the swap function
+                swap(arr[j], arr[j + 1]);
                 swapped = true;
             }
         }
@@ -32,7 +30,7 @@ void printArray(int arr[], int size)
     {
         cout << arr[i] << " ";
     }
-    cout << endl; // Move cout << endl; outside the loop to print the entire array on a new line
+    cout << endl;
 }
 
 int main()
