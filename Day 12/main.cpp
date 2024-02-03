@@ -47,9 +47,10 @@ int main()
         cout << "Element is not present in array";
     }
     else
-    {
-        cout << "Element is present at index " << result;
-    }
+        else
+        {
+            cout << "Element is present at index " << result;
+        }
 
     return 0;
 }
