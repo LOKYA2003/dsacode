@@ -24,7 +24,8 @@ int searchInsert(int arr[], int size, int k)
             // Left
             ans = mid;
             end = mid - 1;
-        }
+        }qrt x
+        
     }
 
     return ans;
