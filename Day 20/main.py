@@ -6,7 +6,7 @@ arr = [5, 6, 7, 8, 9, 10, 1, 2, 3]
 start = 0
 end = len(arr) - 1
 target = 3
-
+ans = end
 
 def searchInSorted(arr, start, end):
      
@@ -14,16 +14,13 @@ def searchInSorted(arr, start, end):
         mid  = (start+end)//2
 
     # Left hand side
-    if arr[mid] == target:
-        return mid
-    elif arr[mid]>=arr[0]:
-        if arr[start]<=target and arr[mid] > target:
-            end = mid - 1
-        else 
-            start = mid+1
-    
-    
-            
+    if arr[mid] >= arr[0]:
+        start = mid + 1
+    else:
+        ans = arr[mid]
+        end = mid - 1
+        
+        
 
 
       
